@@ -1,0 +1,34 @@
+@use './../utilities.scss' as u;
+
+.test-menu-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    .test-menu-title{
+        font-size: 1em;
+        padding-left: 1em;
+        border-left: 2px solid u.$white;
+    }
+    .test-menu-list{
+        display: flex;
+        gap: 1em;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid u.$white;
+        .test-menu-item{
+            .test-menu-link{
+                display: inline-block;
+                padding: .5em;
+                background-color: u.$white;
+                color: u.$violet;
+                font-weight: bold;
+                transition: .25s;
+                &:hover{
+                    background-color: u.$violet;
+                    color: u.$white;
+                    transition: .25s;
+                }
+            }
+        }
+    }
+}

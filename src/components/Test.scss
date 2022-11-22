@@ -1,0 +1,93 @@
+@use './../utilities.scss' as u;
+
+.test-container{
+    margin-top: 2em;
+    .test-title{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        line-height: 44px;
+    }
+    .test-subtitle{
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        line-height: 44px;
+    }
+    .test-tester{
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+    .iframe-container{
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .test-trans-title{
+        margin: 40px 0;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    .test-trans-container{
+        height: 300px;
+        overflow-y: scroll;
+        overflow: scroll;
+        max-width: 600px;
+        margin-bottom: 40px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        padding-left: 50px;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        .test-trans-text{
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+    .test-task-title{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-family: 'GothamMedium', 'Arial', 'sans-serif';
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    .test-task-scenario{
+        display: block;
+        overflow: visible;
+        max-height: 300px;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'GothamMedium', 'Arial', 'sans-serif';
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: bold;
+    }
+    .test-tasks-container{
+        display: flex;
+        flex-direction: column;
+        .test-task-container{
+            border-top: 1px solid u.$white;
+            padding: 10px 20px;
+            .test-task-number, .test-task-text{
+                font-weight: bold;
+                font-size: 1rem;
+                margin-top: 1em;
+            }
+            .test-task-time{
+                color: u.$orange;
+                font-size: 1rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+}

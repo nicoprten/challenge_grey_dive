@@ -1,0 +1,23 @@
+@use './utilities.scss' as u;
+
+body{
+    box-sizing: border-box;
+    max-width: 90%;
+    margin: 0 auto;
+    color: u.$white;
+    font-family: 'GothamBook', 'Arial', 'sans-serif';
+
+    padding-bottom: 140px;
+    background-color: #f2f2f2;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#292643),to(#41416d));
+    background-image: linear-gradient(180deg,#292643,#41416d);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: u.$white;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+@use './../utilities.scss' as u;
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    .navbar-title{
+        display: none;
+    }
+    .navbar-logo{
+        img{
+            width: 170px;
+        }
+    }
+    .navbar-menu-icon{
+        color: u.$white;
+    }
+}
